@@ -1,0 +1,47 @@
+body{
+  margin:0;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-family: "NHaasGroteskDSPro-65Md" !important;
+}
+code{
+  font-family: source-code-pro,Menlo,Monaco,Consoles,'Courier New',monospace;
+}
+#carousel
+{
+  max-height: 500px;
+  object-fit: contain;
+}
+.texthead{
+  color: #28a745!important; /* Your desired background color */
+  color: #fff; /* Your desired text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height 
+  as needed */
+}
+
+.card-box
+{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+/* Standard styles */
+
+/* Media query for screens between 600px and 1200px */
+@media (min-width: 1023px) and (max-width: 1025px) {
+  .card-box
+{
+  margin: 0 3rem 0 1rem;
+}
+}
+@media (min-width: 991px) and (max-width: 1398px) {
+  .card-box
+{
+  margin: 0 2rem 0 2rem;
+}
+}
