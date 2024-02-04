@@ -1,5 +1,5 @@
 import React from "react";
-import { MdDelete } from "react-icons/md";
+import { TiDelete } from "react-icons/ti";
 import { useCart, useDispatchCart } from "../components/ContextReducer";
 import { json } from "react-router-dom";
 function Cart() {
@@ -77,7 +77,7 @@ function Cart() {
                     type="button"
                     className="btn p-0"
                   >
-                    <MdDelete
+                    <TiDelete 
                       onClick={() => {
                         dispatch({ type: "REMOVE", index: index });
                       }}
