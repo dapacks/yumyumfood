@@ -1,7 +1,7 @@
 import CartProvider from "./components/ContextReducer";
 import "./App.css";
-import Home from "./screens/home";
-import Login from "./screens/login";
+import Home from "./screens/Home";
+import Login from "./screens/Login";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Cart from "./screens/Cart";
 import "bootstrap/dist/css/bootstrap.min.css"
