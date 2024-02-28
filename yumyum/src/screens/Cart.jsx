@@ -16,7 +16,7 @@ function Cart() {
   const handleCheckout = async () => {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
-    let response = await fetch("https://practicebackend-five.vercel.app/api/orderData", {
+    let response = await fetch("https://deepak-fqpy.onrender.com/api/orderData", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
