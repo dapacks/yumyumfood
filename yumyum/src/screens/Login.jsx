@@ -12,7 +12,7 @@ let navigate=useNavigate()
         password: credentials.password,
       })
     );
-    const response = await fetch("https://practicebackend-five.vercel.app/api/loginuser", {
+    const response = await fetch("https://deepak-fqpy.onrender.com/api/loginuser", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
