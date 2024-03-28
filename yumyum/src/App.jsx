@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.min.js"
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'
 import Signup from "./screens/Signup";
 import MyOrders from "./screens/MyOrders";
+import Authcheck from "./components/Authcheck";
  // Corrected path
                // Removed .min from the filename
        // Removed .min from the filename
@@ -17,6 +18,7 @@ function App() {
     <CartProvider>
     <Router>
       <div>
+        <Authcheck/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/login" element={<Login/>}/>
