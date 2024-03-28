@@ -7,7 +7,7 @@ export default function MyOrder() {
 
   const fetchMyOrder = async () => {
     try {
-      const response = await fetch("hhttps://deepak-fqpy.onrender.com/api/myOrderData", {
+      const response = await fetch("https://deepak-fqpy.onrender.com/api/myOrderData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
