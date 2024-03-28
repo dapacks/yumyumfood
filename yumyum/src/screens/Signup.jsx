@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 function Signup() {
@@ -8,7 +9,7 @@ const handleSubmit=async (e)=>
 {
   e.preventDefault();
   console.log(JSON.stringify({name:credentials.name,email:credentials.email,password:credentials.password,location:credentials.geolocation}));
-  const response=await fetch("https://deepak-fqpy.onrender.com//api/createuser",{
+  const response=await fetch("http://localhost:5000/api/createuser",{
     method:'POST',
     headers:{
       'Content-type':'application/json'
@@ -22,6 +23,16 @@ const handleSubmit=async (e)=>
   if(!json.success)
   {
    alert("enter valid Credentials")
+  }
+  else {
+    // Clear the form fields on successful submission
+    setcredentials({
+      name: "",
+      email: "",
+      password: "",
+      geolocation: ""
+    });
+    alert("Registration successful!");
   }
 }
 
