@@ -77,7 +77,7 @@ const onChange = (e) => {
    
    
     <button type="submit" className="btn btn-success">Submit</button>
-    <Link to="/login" className='m-3 btn btn-danger'>Already a user</Link>
+    <Link to="/login" className='m-3 btn btn-danger'>registered user</Link>
   </form>
   </div>
   </>
