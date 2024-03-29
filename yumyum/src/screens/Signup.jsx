@@ -9,7 +9,7 @@ const handleSubmit=async (e)=>
 {
   e.preventDefault();
   console.log(JSON.stringify({name:credentials.name,email:credentials.email,password:credentials.password,location:credentials.geolocation}));
-  const response=await fetch("http://localhost:5000/api/createuser",{
+  const response=await fetch("https://deepak-fqpy.onrender.com/api/createuser",{
     method:'POST',
     headers:{
       'Content-type':'application/json'
