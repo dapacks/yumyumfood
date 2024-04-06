@@ -14,7 +14,12 @@ function Signup() {
       headers: {
         'Content-type': 'application/json',
       },
-      body: JSON.stringify(credentials),
+      body: JSON.stringify({
+        name: credentials.name,
+        email: credentials.email,
+        password: credentials.password,
+        location: credentials.geolocation, // Changed to match the first snippet
+      }),
     });
 
     const json = await response.json();
